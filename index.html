@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>בול פגיעה</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <h1  class="name">בול פגיעה</h1>
+  <div id="gane-planing">
+    <div>
+      <input type="color" id="select-color"/> <button >  הוסף צבע</button>
+    </div>
+    <ul id="colors">
+    </ul>
+
+    <button type="button" id="start" disabled>התחל משחק</button>
+  </div>
+  <div id="game" class="hidden">
+    <div id="used-colors"></div>
+    <div id="selected-colors">
+      
+    </div>
+    <div id="guess">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <h1 id="win" class="hidden" >כל הכבוד ניצחת!!!!!!!</h1>
+    <div id="guess-actions">
+      <button id="guess-btn" disabled>נחש </button>
+      <button id="cancel" disabled> בטל ניחוש</button>
+      <button id="newgame" disabled> משחק חדש</button>
+    </div>
+    <div id="results"  class="hidden">
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

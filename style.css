@@ -1,0 +1,107 @@
+body {
+    direction: rtl;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .name {
+    color: rgb(42, 107, 16);
+  }
+  
+  .color {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+  }
+  
+  .del-btn {
+    background: none;
+    margin: 0 10px;
+    border-radius: 50%;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #used-colors, #selected-colors, #guess {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #used-colors div, #selected-colors div, #guess div {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: 0 20px;
+    border: 1px solid;
+  }
+  
+  #selected-colors, #guess {
+    background-color: #e8e8e8;
+    border: 1px solid;
+    height: 100px;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #guess-actions button {
+    margin: 0 10px;
+  }
+
+ 
+  #results div{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e8e8e8;
+    border: 1px solid;
+    height: 75px;
+    width: 40%;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  #results div div{
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+
+  }
+#win{
+  text-align: center;
+}
+
+.func{
+  animation: come 1.5s  infinite;
+}
+
+
+
+@keyframes come{
+  0%{
+  color: #65ff98 ;
+  transform: scale(0.6);
+  }
+  20% {
+  color: #e2fa5d ;
+  }
+  40% {
+  color: #ff9900 ;
+  }
+  50% {
+    transform: scale(1);
+  }
+  60%{
+  color: #ff61f2 ;
+  }
+  80%{
+  color: #fa5252 ;
+  }
+  100%{
+  color: #77f751 ;
+  transform: scale(0.6);
+  }
+  }
